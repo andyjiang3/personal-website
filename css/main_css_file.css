@@ -175,6 +175,15 @@ nav {
 
 /* CSS CUSTOM */
 
+svg {
+    max-width: 100%;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
 h1,
 h2,
 h3,
@@ -190,6 +199,8 @@ ul {
     list-style: none;
 }
 
+h6,
+footer,
 h2,
 div,
 li,
@@ -636,6 +647,113 @@ p.blocksize {
 /****************************/
 
 
+/* FOOTER */
+
+.strip-margin {
+    margin: 0!important;
+}
+
+.size-h6,
+h6 {
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: -.025em;
+}
+
+footer {
+    position: relative;
+    z-index: 100;
+    padding: 80px 0 40px 0;
+    color: #fff;
+    background: #000;
+    box-shadow: 0 -1px 0 rgba(255, 255, 255, .1);
+}
+
+footer div {
+    display: block;
+    color: #fff;
+    font-weight: 500;
+    width: 100%;
+}
+
+footer div>ul {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-pack: justify;
+    justify-content: space-between
+}
+
+footer div>ul>li {
+    -ms-flex-preferred-size: 20%;
+    flex-basis: 20%
+}
+
+footer .footer-list {
+    margin-bottom: 40px;
+}
+
+footer h6 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+footer div>ul>li li {
+    width: 100%;
+    line-height: 1.5;
+}
+
+footer a {
+    color: #888;
+    font-weight: 400;
+    transition: all .2s ease;
+}
+
+.footer-list a {
+    font-size: 14px;
+}
+
+.flex-space {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.padding-xs-bottom {
+    padding-bottom: 20px;
+}
+
+.padding-xs-top {
+    padding-top: 20px;
+}
+
+.padding-xxs-bottom {
+    padding-bottom: 10px;
+}
+
+.footer-icon a {
+    margin-right: 10px;
+}
+
+.footer-icon a svg {
+    color: #666;
+    transition: all .2s ease;
+}
+
+footer .copyright {
+    color: #444;
+    margin: 0;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+
+/****************************/
+
+
 /* NAV: NO LINE BORDER */
 
 @media screen and (min-width:1024px) {
@@ -722,6 +840,16 @@ p.blocksize {
         grid-template-columns: 1fr 1fr
     }
     /****************************/
+    ul.strip-margin li a:hover {
+        color: #3e82ef;
+    }
+    footer .footer-icons a:hover {
+        color: #3e82ef;
+    }
+    .size-h6,
+    h6 {
+        font-size: 16px;
+    }
     #projects .device-container {
         height: 80vh;
     }
