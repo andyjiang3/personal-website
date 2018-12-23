@@ -484,9 +484,9 @@ a {
 }
 
 .verb {
-    font-size: 60px;
+    font-size: 65px;
     font-family: Impact;
-    padding-left: 80px;
+    padding-left: 90px;
     margin: 0;
     color: #fff;
 }
@@ -507,7 +507,7 @@ a {
 }
 
 .whati-padding {
-    padding: 40px 0px 40px 0px;
+    padding: 40px 0px 60px 0px;
 }
 
 
@@ -549,7 +549,8 @@ a {
     left: 0;
     margin-left: 30px;
     min-height: 100%;
-    width: calc(100% + 200px);
+    width: calc(50vw - 57.5px);
+    /*calc(100% + 200px)*/
     background-size: contain;
     background-color: #3e82ef;
     background-repeat: no-repeat;
@@ -748,6 +749,10 @@ footer .copyright {
     margin: 0;
     font-weight: 400;
     font-size: 12px;
+}
+
+footer .footer-icons a {
+    margin-right: 10px
 }
 
 
