@@ -472,7 +472,7 @@ a {
 
 #intropage {
     position: relative;
-    width: 100vw;
+    width: 100%;
     pointer-events: none;
     z-index: 100;
     height: calc(100vh + 50px);
