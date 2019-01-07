@@ -24,6 +24,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
     <!--FONTS-->
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <!--TITLE FONTS-->
@@ -105,24 +106,26 @@
 
     </nav>
     <header id="intropage">
-        <div class="intropage-content">
+        <div class="container-l grid-3 padding-s-top">
 
             <div class="noselect" id="name">
                 <p>Andy</p>
-                <p id="lastname">Jiang</p>
             </div>
-            <div class="noselect" id="description">
-                <p>
-                    I am a
-                    <span class="des-rotate" data-period="2000" data-rotate="[&quot;coder&quot;, &quot;student&quot;, &quot;developer&quot;, &quot;nerd&quot;, &quot;designer&quot;, &quot;competitor&quot;]">
-                    <span class="wrap"></span>
-                    </span>.
-                </p>
-            </div>
-            <div class="noselect avatar">
-                <img src="assets/images/avatar.png" alt="Andy Jiang" />
+            <div class="noselect avatar js-tilt" data-tilt>
+                <img src="assets/images/avatar.png" alt="Andy Jiang" width="450px" height="450px" />
 
             </div>
+            <div class="noselect" id="name">
+                <p>Jiang</p>
+            </div>
+        </div>
+        <div class="noselect container" id="description">
+            <p>
+                I am a
+                <span class="des-rotate" data-period="2000" data-rotate="[&quot;coder&quot;, &quot;student&quot;, &quot;developer&quot;, &quot;nerd&quot;, &quot;designer&quot;, &quot;competitor&quot;]">
+                <span class="wrap"></span>
+                </span>.
+            </p>
         </div>
         <div class="anim-mouse">
             <svg class="mouse" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76 130" preserveAspectRatio="xMidYMid meet">
@@ -133,7 +136,10 @@
             </svg>
 
         </div>
+
     </header>
+
+    <a id="about-nav"></a>
     <div id="about">
         <div class="container padding-l align-center color-white">
             <h2>ABOUT</h2>
@@ -442,6 +448,15 @@
                 </script> Andy Jiang. All rights reserved.</p>
         </div>
     </footer>
+    <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="vendor/select2/select2.min.js"></script>
+    <script src="vendor/tilt/tilt.jquery.min.js"></script>
+    <script>
+        $('.js-tilt').tilt({
+            scale: 1.2
+        })
+    </script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
